@@ -17,7 +17,7 @@ const SideNav = () => {
     window.addEventListener('resize', handelResize);
 
     return () => window.removeEventListener('resize', handelResize);
-  }, []);
+  }, [mediaQuery]);
 
   return (
     <>
