@@ -5,9 +5,9 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import MenuIcon from "@mui/icons-material/Menu";
 
 const SideNav = () => {
-  const [showNav, setShowNav] = useState(true);
-  const [matchMedia, setMatchMedia] = useState(null);
+  const [showNav, setShowNav] = useState(false);
   const mediaQuery = window.matchMedia('(max-width: 768px)');
+  const [matchMedia, setMatchMedia] = useState(mediaQuery.matches);
 
   useEffect(() => {
     const handelResize = () => {
